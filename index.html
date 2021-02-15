@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barilla</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="heading">
+                    <h1>
+                        <i>Vinci una fornitura <br>
+                            di pasta Barilla gratis per un anno!</i>
+                    </h1>
+                </div>
+                <div class="content-container">
+                    <div>
+                        <img width="100%" src="assets/image/img-barilla.png" alt="barilla">
+
+                    </div>
+                    <div class="form">
+                        <form action="#" id="form" class="form-body" name="form">
+                            <h2 class="form-heading">Dove possiamo inviare il possibile premio?</h2>
+
+
+                            <div>
+                                <div>
+                                    <p class="validator-gender">completa correttamente il campo: sesso</p>
+                                </div>
+                                <input class="radio-gender" id="male" name="group" type="radio"
+                                    onclick="checkGender(), validateGender()" value=0>
+                                <input class="radio-gender" id="female" name="group" type="radio"
+                                    onclick="checkGender(), validateGender()" value=0>
+
+
+                                <div class="gender">
+                                    <label class="gender-button" id="male-g" for="male">uomo</label>
+                                    <label class="gender-button gender-button-red" id="female-g"
+                                        for="female">DONNA</label>
+                                </div>
+                            </div>
+                            <div class="input-half">
+                                <div class="input-field">
+                                    <input type="text" id="input-text" name="fname" required=""
+                                        onfocusout="validateName()" onkeyup="validateName()">
+                                    <label id="input-label" for="">Nome</label>
+
+                                    <div>
+                                        <p class="validator-name">completa correttamente il campo: nome</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="input-field">
+                                    <input id="input-text" type="text" name="fsurname" required=""
+                                        onfocusout="validateSurname()" onkeyup="validateSurname()">
+                                    <label id="input-label" for="">Cognome</label>
+
+                                    <div>
+                                        <p class="validator-surname">completa correttamente il campo: cognome</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-full">
+                                <div class="input-field input-field-email">
+                                    <input id="input-text" type="text" name="femail" required=""
+                                        onfocusout="validateEmail()" onkeyup="validateEmail()">
+                                    <label id="input-label" for="">Email</label>
+
+                                    <div>
+                                        <p class="validator-email">completa correttamente il campo: email</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="form-bday">Data di nascita</p>
+                            <div class="input-date">
+
+                                <div class="input-field input-field-date">
+                                    <input type="number" id="input-day" name="fday" required=""
+                                        onfocusout="validateDay()" onkeyup="validateDay()"
+                                        oninput="maxLengthCheck(this)" maxlength="2">
+                                    <label id="input-label" for="">Giorno</label>
+                                </div>
+
+                                <div class="input-field input-field-date">
+                                    <input type="number" id="input-month" name="fmonth" required=""
+                                        onfocusout="validateMonth()" onkeyup="validateMonth()"
+                                        oninput="maxLengthCheck(this)" maxlength="2">
+                                    <label id="input-label" for="">Mese</label>
+                                </div>
+
+
+                                <div class="input-field input-field-date">
+                                    <input id="input-year" type="number" name="fyear" required=""
+                                        onfocusout="validateYear()" onkeyup="validateYear()"
+                                        oninput="maxLengthCheck(this)" maxlength="4">
+                                    <label id="input-label" for="">Anno</label>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <p class="validator-age">I minori di 18 anni non possono participare!</p>
+                            </div>
+
+                            <div class="submit-btn"
+                                onclick="validateGender(),validateName(), validateSurname(), validateEmail(), validateDay(), validateMonth(), validateYear()">
+                                <span class="blink-text">PARTECIPAZIONE 100% GRATUITA</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+               <div class="footer-descr">
+                <p class="footer-text"> Giorno Unico 2021 - Partecipazione gratuita. CONCORSO A PREMI con periodo di partecipazione dal 27
+                    novembre 2020 al 14 novembre 2021. REALIZZATO IN CONFORMITÀ CON QUANTO PREVISTO DAL DPR 430/2001 -
+                    L'estrazione è garantita da Naturvel PTE LTD. Solo gli utenti che compilano interamente e correttamente
+                    il modulo partecipano all'estrazione. Premio: un buono Idea Shopping del valore di 1000 euro iva esclusa
+                    - montepremi complessivo del concorso è pari a 1000 Euro iva esclusa. In alternativa al buono
+                    IdeaShopping, l’utente vincitore può scegliere di ricevere un voucher di una compagnia aerea o
+                    ferroviaria selezionata dal Promotore.</p>
+               </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
